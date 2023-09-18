@@ -1,5 +1,5 @@
 import { View, Text, TouchableOpacity } from "react-native";
-
+import React, { useState } from "react";
 import { styles } from './styles';
 
 type Props = {
