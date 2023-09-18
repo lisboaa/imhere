@@ -4,14 +4,14 @@ import { styles } from './styles';
 
 type Props = {
     name: string;
-    onRemove: Function;
+    onRemove: () => void;
 }
 
 export function Participant(props: Props)
 {
     return(
         <>
-            <View style={ styles.container }></View>
+            <View style={ styles.container }>
                 <Text style={ styles.name }>
                     { props.name }
                 </Text>

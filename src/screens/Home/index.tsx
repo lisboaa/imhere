@@ -4,8 +4,8 @@ import { Participant } from '../../components/Participant';
 
 export default function Home() {
 
-  function handlerParticipantAdd() {
-    console.log('Clicou');
+  function handlerParticipantAdd(name:string) {
+    console.log('Você adicionou o(a) ' + `${name}`);
   }
 
   function handlerParticipantRemove() {
@@ -27,7 +27,7 @@ export default function Home() {
             placeholder='Nome do participante'
             placeholderTextColor='#6b6b6b'
         />
-        <TouchableOpacity style={ styles.button } onPress={handlerParticipantAdd}>
+        <TouchableOpacity style={ styles.button } onPress={() => handlerParticipantAdd("Dougl")}>
           <Text style={ styles.buttonText }>
             +
           </Text>
